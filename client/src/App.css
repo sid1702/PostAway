@@ -1,0 +1,300 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.navbar {
+  background-color: teal;
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userProfile {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.userProfile h2 {
+  color: white;
+  margin-left: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+.card {
+  width: 300px;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.navbar button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.logOutBtn:hover {
+  background-color: rgb(142, 142, 142);
+}
+
+.user {
+  background-color: rgb(156, 156, 156);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+}
+
+.usernameLink {
+  background-color: rgb(187, 246, 246);
+  border-radius: 7px;
+  text-decoration: none;
+  color: black;
+  padding: 0px 5px;
+}
+
+.usernameLink:hover {
+  background-color: teal;
+  color: white;
+}
+
+.dltPost {
+  padding: 5px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  margin: 5px;
+}
+
+.dltPost:hover {
+  background-color: gray;
+}
+
+.likes {
+  display: flex;
+}
+
+.likesLength {
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.likeBttn {
+  color: rgba(250, 250, 250, 0.8);
+}
+.unlikeBttn {
+  color: white;
+}
+
+.formContainer {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid teal;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.formCard #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background-color: rgb(114, 172, 208);
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background-color: teal;
+}
+
+span {
+  color: red;
+}
+
+.pagePost {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.pagePost .card {
+  width: 50%;
+  text-align: center;
+  background-color: teal;
+  color: white;
+  border-radius: 10px;
+}
+
+.postDeets {
+  height: 100px;
+}
+
+.postTitle {
+  background-color: rgb(156, 156, 156);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.postText {
+  height: 100%;
+}
+
+.comment {
+  background-color: teal;
+  width: 50%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+.inputs input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px 7px;
+  outline: none;
+  margin: 10px;
+}
+
+.inputs button {
+  padding: 5px 7px;
+  border-radius: 10px;
+  border: none;
+}
+
+.inputs button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.loginDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Inp {
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  background-color: teal;
+  color: white;
+  padding: 5px;
+  margin: 7px;
+}
+
+.Inp::placeholder {
+  color: white;
+}
+
+.updBtn {
+  margin: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.updBtn:hover {
+  background-color: rgb(165, 164, 164);
+}
+
+.listComments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eachComment {
+  width: 50%;
+  background-color: white;
+  margin: 7px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentDelete {
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.commentDelete:hover {
+  background-color: red;
+}
+
+.eachCommentDiv2 {
+  display: flex;
+  align-items: center;
+}
+
+.passwordChangeDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passwordChangeDiv > * {
+  margin: 10px;
+  padding: 5px;
+}
